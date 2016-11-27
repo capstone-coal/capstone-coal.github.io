@@ -1,0 +1,10 @@
+h1, h2, h3, p, a {
+  font-family:'Josefin Slab', 'Helvetica Neue Thin', 'HelveticaNeue-Thin', 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+}
+
+.main {
+  height: 550px;
+  padding-top: 55px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/intro.jpg) ;
+  margin-top: 0px;
+}
