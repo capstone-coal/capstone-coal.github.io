@@ -9,6 +9,6 @@ h3 {
 .main {
   height: 550px;
   padding-top: 55px;
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/intro.jpg) ;
+  background: url('img/background.jpg') ;
   margin-top: 0px;
 }
