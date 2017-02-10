@@ -1,3 +1,21 @@
+body {
+	/*display: block;*/
+  	/*position: relative;*/
+}
+
+body::before {
+	content: "";
+	background: url('img/background.jpg') center center no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+
+}
 
 h1, h2, h3, p, a {
   font-family:'Josefin Slab', 'Helvetica Neue Thin', 'HelveticaNeue-Thin', 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
@@ -7,7 +25,7 @@ h3 {
 	color: #696969;
 }
 
-.main {
+/*.main {
   height: 250px;
   display: block;
   position: relative;
@@ -27,4 +45,4 @@ h3 {
 	position: absolute;
 	z-index: -1; 
 
-}
+}*/
