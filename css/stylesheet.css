@@ -25,6 +25,11 @@ h3 {
 	color: #696969;
 }
 
+video {
+	display: block;
+	margin: 0 auto;
+}
+
 /*.main {
   height: 250px;
   display: block;
