@@ -1,0 +1,22 @@
+---
+title: Blog Page
+permalink: /blog/
+layout: default
+---
+
+<div class="main">
+  <div class="container">
+    <h1>
+      Blog
+    </h1>
+  </div>
+</div>
+
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
