@@ -1,0 +1,203 @@
+---
+---
+
+@import "bootstrap";
+@import "reset";
+@import "variables";
+
+
+body::before {
+  content: "";
+  background: url('img/background.jpg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+}
+
+html, body {
+  font-family:'Josefin Slab', 'Vollkorn', 'Open Sans' sans-serif;
+
+}
+
+
+.header {
+
+  height: 100px;
+  text-align: center;
+  display: block;
+  width: 100%; 
+  background: #fff;
+
+  h1 {
+    font-size: 36px;
+    color: #31363d;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    top: 32px;
+  }
+
+  h3 {
+    color: #696969;
+    font-size: 24px;
+  }
+
+}
+
+.nav {
+
+  ul {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  li {
+    -webkit-transition:color 0.25s;
+    transition:color 0.25s;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+    display: inline-block;
+
+    a:link {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #31363d;
+    }
+  }
+
+  li:hover {
+    color: #31363d;
+    cursor: pointer; 
+    -webkit-transition: color 1s;
+    transition: color 1s;
+  }
+
+
+}
+
+.post {
+  text-align: center;
+
+  h1 {
+    font-size: 26px;
+
+    a {
+      color: #31363d;
+    }
+    
+    :hover {
+      text-decoration: none;
+      color: grey;
+    }
+
+  }
+
+  video {
+    display: block;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+
+.main {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p{
+    text-align: center;
+    font-size: 24px;
+  }
+  
+}
+
+div.transbox
+{
+  width: 338px;
+  height: 204px;
+  margin:auto;
+  background-color: #ffffff;
+  border: 1px solid black;
+  /* for IE */
+  filter:alpha(opacity=60);
+  /* CSS3 standard */
+  opacity:0.6;
+}
+
+div.transbox p
+{
+	text-align: center;
+  margin-top: 30px;
+}
+
+.row {
+	margin-top:30px;
+}
+
+.AvatarDiv{
+  width: 128px;
+  height: 128px;
+  padding:2px;
+  background: #ececec;
+  border-radius:128px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+  -moz-border-radius: 128px;
+  -webkit-border-radius: 128px;
+}
+
+
+.AvatarImg{
+  width:128px;
+  height:128px;
+  line-height: 0; /* remove line-height */ 
+  display: inline-block;  /* circle wraps image */
+  border-radius: 50%; /* relative value */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: linear 0.25s;
+}
+
+
+@media (max-width: 500px) {
+  .row {
+    margin-top: 0;
+  }
+  .img-responsive {
+    margin-bottom: 20px;
+  }
+}
