@@ -8,13 +8,13 @@
 
 <div>
 {% if page.previous %}
-<b>Previous:</b> <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+<b>Previous:</b> <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
 {% endif %}
 </div>
 
 <div>
 {% if page.next %}
-<b>Next:</b> <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+<b>Next:</b> <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
 {% endif %}
 </div>
 
