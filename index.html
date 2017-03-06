@@ -81,9 +81,9 @@
           <h2>Blog</h2>
           <p>Our most recent posts:</p>
           <ul>
-            <li><a href="#">GDAL ENVI Rotation Bug Fix</a></li>
-            <li><a href="#">Winter 2017 Progress Report</a></li>
-            <li><a href="#">Python Package Index Release</a></li>
+            {% for post in site.posts limit:5 %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+            {% endfor %}
           </ul>
           <p>View all of our posts on our <a href="blog">blog</a>.</p>
         </div>

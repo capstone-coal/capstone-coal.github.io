@@ -1,0 +1,21 @@
+{% include header.html %}
+
+<h1>{{ page.title }}</h1>
+
+<p>Posted <b>{{ page.date }}</b> by <b>{{ page.author }}</b></p>
+
+{{ page.content }}
+
+<div>
+{% if page.previous %}
+<b>Previous:</b> <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+{% endif %}
+</div>
+
+<div>
+{% if page.next %}
+<b>Next:</b> <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+{% endif %}
+</div>
+
+{% include footer.html %}
