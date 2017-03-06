@@ -3,3 +3,6 @@
 
 # ignore generated site
 _site/
+
+# ignore drafts
+_drafts/
