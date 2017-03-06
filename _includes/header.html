@@ -24,6 +24,28 @@
       float: none;
       margin: 0 auto;
       }
+
+      .team-avatar {
+      float: left;
+      max-width: 10em;
+      max-height: 10em;
+      margin: 0.5em 1em 0em 0em;
+      }
+
+      /* clearfix hack
+       * https://www.w3schools.com/css/css_float.asp */
+      .team-member::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+
+      .team dt {
+      float: left;
+      margin-right: 0.25em;
+      position: relative;
+      top: 1px;
+      }
     </style>
 
   </head>
