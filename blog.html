@@ -9,7 +9,7 @@
 
 <a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 <p>Posted <b>{{ post.date | date: "%Y-%m-%d" }}</b> by <b>{{ post.author }}</b></p>
-{{ post.excerpt }}
+{{ post.content }}
 
 {% endfor %}
 
