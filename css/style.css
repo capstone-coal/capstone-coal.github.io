@@ -29,7 +29,7 @@
 
 /* clearfix hack
  * https://www.w3schools.com/css/css_float.asp */
-.team-member::after {
+.clearfix, .team-member::after {
     content: "";
     clear: both;
     display: table;
@@ -55,4 +55,8 @@ figcaption {
     margin-top: 0.2em;
     font-size: 0.8em;
     text-align: center;
+}
+
+blockquote {
+    font-size: small;
 }
