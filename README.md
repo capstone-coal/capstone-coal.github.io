@@ -13,4 +13,4 @@ To become involved or if you require help using the project request to join our 
 If you have issue using COAL, please log a ticket in our [issue tracker](https://github.com/capstone-coal/coal/issues).
 
 ## License
-COAL is licensed under the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0) a copy of which ships with this source code.
+This Website source is licensed under the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0) a copy of which ships with this source code.
