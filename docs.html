@@ -163,25 +163,25 @@ $ sudo make install</pre>
 import pycoal
 
 # path to spectral library
-libraryFilename = "s06av95a_envi.hdr"
+library_filename = "s06av95a_envi.hdr"
 
 # path to orthocorrected, scaled-reflectance image
-inputFilename = "ang20150420t182050_corr_v1e_img.hdr"
+input_filename = "ang20150420t182050_corr_v1e_img.hdr"
 
 # path to save RGB image
-rgbFilename = "ang20150420t182050_corr_v1e_img_rgb.hdr"
+rgb_filename = "ang20150420t182050_corr_v1e_img_rgb.hdr"
 
 # path to save mineral classified image
-classifiedFilename = "ang20150420t182050_corr_v1e_img_class.hdr"
+classified_filename = "ang20150420t182050_corr_v1e_img_class.hdr"
 
 # create a new mineral classification instance
-mineralClassification = pycoal.mineral.MineralClassification(libraryFilename)
+mineral_classification = pycoal.mineral.MineralClassification(test_image_name)
 
 # generate a georeferenced visible-light image
-mineralClassification.toRGB(inputFilename, rgbFilename)
+mineral_classification.to_rgb(input_filename, rgb_filename)
 
 # generate a mineral classified image
-mineralClassification.classifyImage(inputFilename, classifiedFilename)</pre>
+mineral_classification.classify_image(input_filename, classified_filename)</pre>
 
 <h3 id="mining">Mining Identification</h3>
 
@@ -191,16 +191,16 @@ mineralClassification.classifyImage(inputFilename, classifiedFilename)</pre>
 import pycoal
 
 # path to mineral classified image
-mineralFilename = "ang20150420t182050_corr_v1e_img_class.hdr"
+mineral_filename = "ang20150420t182050_corr_v1e_img_class.hdr"
 
 # path to save mining classified image
-miningFilename = "ang20150420t182050_corr_v1e_img_class_mining.hdr"
+mining_filename = "ang20150420t182050_corr_v1e_img_class_mining.hdr"
 
 # create a new mining classification instance
-miningClassification = pycoal.mining.MiningClassification()
+mining_classification = pycoal.mining.MiningClassification()
 
 # generate a mining classified image
-miningClassification.classifyImage(mineralFilename, miningFilename)</pre>
+mining_classification.classify_image(mineral_filename, mining_filename)</pre>
 
 <h3 id="environment">Environmental Correlation</h3>
 
@@ -210,19 +210,19 @@ miningClassification.classifyImage(mineralFilename, miningFilename)</pre>
 import pycoal
 
 # path to mining classified image
-miningFilename = "ang20150420t182050_corr_v1e_img_class_mining.hdr"
+mining_filename = "ang20150420t182050_corr_v1e_img_class_mining.hdr"
 
 # path to hydrography data
-vectorFilename = "NHDNM/Shape/NHDFlowline.shp"
+vector_filename = "NHDNM/Shape/NHDFlowline.shp"
 
 # path to save environmental correlation image
-correlationFilename = "ang20150420t182050_corr_v1e_img_class_mining_NHDFlowline_correlation.hdr"
+correlation_filename = "ang20150420t182050_corr_v1e_img_class_mining_NHDFlowline_correlation.hdr"
 
 # create a new environmental correlation instance
-environmentalCorrelation = pycoal.environment.EnvironmentalCorrelation()
+environmental_correlation = pycoal.environment.EnvironmentalCorrelation()
 
 # generate an environmental correlation image of mining pixels within 10 meters of a stream
-environmentalCorrelation.intersectProximity(miningFilename, vectorFilename, 10.0, correlationFilename)</pre>
+environmental_correlation.intersect_proximity(mining_filename, vector_filename, 10.0, correlation_filename)</pre>
 
 <h2 id="development">Development</h2>
 
