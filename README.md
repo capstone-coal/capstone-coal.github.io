@@ -15,7 +15,7 @@ The COAL website is licensed under the [Apache License, Version 2.0](http://www.
 
 The COAL website is developed locally with [Jekyll](https://jekyllrb.com/), "a simple, blog-aware, static site generator." Jekyll depends on Ruby and RubyGems.
 
-Install Jekyll with `gem install jekyll`. It may be necessary to add to the `$PATH` environment variable like `export PATH=~/.gem/ruby/2.1.0/bin:$PATH`.
+Install Jekyll with `gem install jekyll`. It may be necessary to add to the `$PATH` environment variable like `export PATH=~/.gem/ruby/2.1.0/bin:$PATH`. On Debian 9 it may be installed from the package `jekyll`.
 
 Use `jekyll serve --drafts` to host the site at `http://localhost:4000`, regenerating it whenever files change and displaying drafts. Simply edit the site and reload it in a web browser to view changes. Posts can be drafted in the `_drafts` directory and published in the `_posts` directory.
 
